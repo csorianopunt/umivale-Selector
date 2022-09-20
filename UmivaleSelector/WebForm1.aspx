@@ -17,6 +17,6 @@
 </html>
 <script language="javascript" type="text/javascript">
     $(document).ready(function () {
-		    window.parent.open(<%=url%>,"_self");
+		    window.parent.open("<%=url%>","_self");
         });
 </script>
