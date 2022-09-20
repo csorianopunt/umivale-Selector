@@ -25,7 +25,7 @@ namespace UmivaleSelector
             {
                 string connectionString = Properties.Settings.Default.connectionString;
                 using (SqlConnection connection = new SqlConnection(connectionString))
-                using (SqlCommand command = new SqlCommand("select TOP 1 DNI,Centro,Call_ID from DNI where Caller = " + tel + " Order By FechaHora DESC", connection))
+                using (SqlCommand command = new SqlCommand("select TOP 1 ISNULL(DNI,'') as DNI, ISNULL(Centro,'') as Centro, ISNULL(Call_ID,'') as Call_ID FROM DNI WHERE Caller = " + tel + " Order By FechaHora DESC", connection))
                 {
                     connection.Open();
                     using (SqlDataReader reader = command.ExecuteReader())
