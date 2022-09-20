@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UmivaleSelector.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="connectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=DESKTOP-CVU2401\SQL2019;DataBase=Telemira;User ID=Baco; Password=JustDoIt!</Value>
+    </Setting>
+    <Setting Name="Centro" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">888760</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
