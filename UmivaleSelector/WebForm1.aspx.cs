@@ -53,10 +53,8 @@ namespace UmivaleSelector
             }
             catch (Exception ex)
             {
-                url = "http://srvccsynergy/synergy/docs/Pntv2preinputsUni.aspx?tel=" + tel + "&callid=" + callid;
+                url = "http://srvccsynergy/synergy/docs/Pntv2preinputs.aspx?tel=" + tel + "&callid=" + callid;
             }
-
-
         }
     }
 }
