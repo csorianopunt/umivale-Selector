@@ -19,7 +19,7 @@ namespace UmivaleSelector
             //ej.: tel = 888802675022247 & callid = 85269
 
             string tel = Request["tel"];
-            string callid = Request["callid"];
+            string dir = Request["dir"];
 
             try
             {
@@ -40,12 +40,12 @@ namespace UmivaleSelector
                                 /* si es SAC */
                                 if (Centro == Properties.Settings.Default.Centro)
                                 {
-                                    url = "http://srvsynergy/synergy/docs/Pntv2preinputs.aspx?tel=" + tel + "&callid=" + callid;
+                                    url = "http://srvsynergy/synergy/docs/Pntv2preinputs.aspx?tel=" + tel + "&dir=" + dir;
                                 }
                                 /* si es Callcenter */
                                 else
                                 {
-                                    url = "http://srvccsynergy/synergy/docs/Pntv2preinputs.aspx?tel=" + tel + "&callid=" + callid;
+                                    url = "http://srvccsynergy/synergy/docs/Pntv2preinputs.aspx?tel=" + tel + "&dir=" + dir;
                                 }
                         }
                     }
@@ -53,7 +53,7 @@ namespace UmivaleSelector
             }
             catch (Exception ex)
             {
-                url = "http://srvccsynergy/synergy/docs/Pntv2preinputs.aspx?tel=" + tel + "&callid=" + callid;
+                url = "http://srvccsynergy/synergy/docs/Pntv2preinputs.aspx?tel=" + tel + "&dir=" + dir;
             }
         }
     }
