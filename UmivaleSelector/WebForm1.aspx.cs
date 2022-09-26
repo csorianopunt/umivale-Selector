@@ -40,7 +40,7 @@ namespace UmivaleSelector
                                 /* si es SAC */
                                 if (Centro == Properties.Settings.Default.Centro)
                                 {
-                                    url = "http://srvsynergy/synergy/docs/Pntv2preinputs.aspx?tel=" + tel.Remove(0, 6) + "&dir=" + dir;
+                                    url = "http://srvsynergy/synergy/docs/Pntv2preinputs.aspx?tel=" + tel + "&dir=" + dir;
                                 }
                                 /* si es Callcenter */
                                 else
